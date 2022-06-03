@@ -44,9 +44,9 @@ public class JPAConfiguration {
 	@Bean
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
-		dataSource.setUsername("root");
-		dataSource.setPassword("");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/casadocodigo");
+		dataSource.setUsername("casadocodigo");
+		dataSource.setPassword("casadocodigo");
+		dataSource.setUrl("jdbc:mysql://banco-casadocodigo.cfy1o490grqq.us-east-1.rds.amazonaws.com:3306/casadocodigo");
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		return dataSource;
 	}
